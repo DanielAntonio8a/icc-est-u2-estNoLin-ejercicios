@@ -184,4 +184,63 @@ Para contribuir a este proyecto, por favor crea un fork y envía una solicitud d
 ## Autores
 
 - [PABLO TORRES] - Desarrollo inicial
+- [Daniel Antonio Duran] - Estudiante
+##
+
+# Proyecto: Práctica de Árboles Binarios
+
+Este repositorio contiene la implementación de cuatro ejercicios básicos sobre árboles binarios en Java, diseñados para reforzar conceptos de recursión, estructuras de datos y algoritmos.
+
+---
+
+## 📝 Descripción
+
+1. **Ejercicio 1 – Insertar en un BST**: Inserta valores en un Binary Search Tree (BST) y muestra el recorrido por niveles.  
+2. **Ejercicio 2 – Invertir un Árbol Binario**: Intercambia recursivamente los hijos izquierdo y derecho de cada nodo.  
+3. **Ejercicio 3 – Listar Niveles en Listas**: Agrupa los nodos de cada nivel en listas enlazadas y las devuelve como `List<List<Node>>`.  
+4. **Ejercicio 4 – Profundidad Máxima**: Calcula la altura (profundidad) máxima de un árbol binario.  
+
+---
+
+## 📁 Estructura de Carpetas
+
+src/
+├─ main/
+│ ├─ Ejercicio_01_insert/
+│ │ └─ InsertBST.java
+│ │ └─ App.java ← Ejecuta los cuatro ejercicios
+│ ├─ Ejercicio_02_invert/
+│ │ └─ InvertBinaryTree.java
+│ ├─ Ejercicio_03_listLeves/
+│ │ └─ ListLevels.java
+│ └─ Ejercicio_04_depth/
+│ └─ Depth.java
+└─ test/
+├─ Ejercicio_01_insert/
+│ └─ InsertBSTTest.java
+├─ Ejercicio_03_listLeves/
+│ └─ ListLevelsTest.java
+└─ Ejercicio_04_depth/
+└─ DepthTest.java
+
+---
+
+## ⚙️ Requisitos
+
+- JDK 8 o superior  
+- [JUnit 5](https://junit.org/junit5/)  
+- (Opcional) Maven o Gradle para gestión de dependencias  
+
+---
+
+## 🚀 Compilación y Ejecución
+
+### Usando Maven
+
+```bash
+mvn clean compile
+mvn test                 # Ejecuta tests
+mvn exec:java \
+  -Dexec.mainClass="main.App"
+
 
